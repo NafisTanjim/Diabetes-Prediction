@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <style>
+        body{
+           background-image:url("{% static 'DiabetesPrediction/Images/dark.jpg'%}");
+             background-repeat: no-repeat;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+<p>Welcome</p>
+<div align = 'center' class="main">
+    <h1>Fill up the following information:</h1>
+    <form action="result">
+        <table>
+            <tr>
+                <td align="right">Glucose:</td>
+                <td align="left"> <input type="text:" name="n1"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Pregnancies:</td>
+                <td align="left"> <input type="text:" name="n2"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Skin thickness:</td>
+                <td align="left"> <input type="text:" name="n3"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Blood pressure:</td>
+                <td align="left"> <input type="text:" name="n4"</td>
+            </tr>
+
+            <tr>
+                <td align="right">BMI:</td>
+                <td align="left"> <input type="text:" name="n5"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Diabetes pedigree:</td>
+                <td align="left"> <input type="text:" name="n6"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Age:</td>
+                <td align="left"> <input type="text:" name="n7"</td>
+            </tr>
+
+            <tr>
+                <td align="right">Insulin:</td>
+                <td align="left"> <input type="text:" name="n8"</td>
+            </tr>
+
+        </table>
+        <input type="submit">
+    </form>
+    result:{{result}}
+
+</div>
+
+</body>
+</html>
