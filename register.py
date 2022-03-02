@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.messagebox import *
 
-######Function
 def register():
     if entryfirstname.get() == '' or entrylastname.get() == '' or entryemail.get() == '' or entrycontact.get() == ''\
             or  entrypassword.get() == '' or entryconfirmpassword.get() == '' or comboquestion.get() == 'Select'\
@@ -18,7 +17,6 @@ def register():
 
 
 
-#########GUI
 root = Tk()
 root.geometry('1350x710+0+10')
 root.title('Registration Form')
