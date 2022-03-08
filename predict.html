@@ -6,14 +6,38 @@
     <title>Prediction</title>
     <style>
         body{
-           background-image:url("{% static 'DiabetesPrediction/Images/dark.jpg'%}");
-             background-repeat: no-repeat;
+              background-image:url("{% static 'DiabetesPrediction/Images/img.jpg'%}");
+            background-repeat: no-repeat;
             background-size:cover;
+        }
+        .main{
+            position:fixed;
+            top:120px;
+            left:440px;
+            width:550px;
+            background-color:#ffffff;
+            border-radius:10px ;
+            align-items:center;
+            padding:5%;
+
+        }
+        h1{
+            color: cadetblue;
+            font-size:30px;
+            font-weight:bold;
+        }
+        input[type=submit]{
+            background-color:#0086b3 ;
+            border:2px;
+            color:white;
+            padding:8px 16px;
+            cursor:grab;
+            margin-top:15px ;
         }
     </style>
 </head>
 <body>
-<p>Welcome</p>
+<p> </p>
 <div align = 'center' class="main">
     <h1>Fill up the following information:</h1>
     <form action="result">
